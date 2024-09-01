@@ -24,7 +24,6 @@ model.add(MaxPooling2D((2, 2)))
 model.add(Flatten())
 model.add(Dense(784,activation='relu'))
 model.add(Dense(16,activation='relu'))
-model.add(Dense(16,activation='relu'))
 model.add(Dense(10,activation='softmax'))
 
 model.compile(optimizer = 'adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
